@@ -1,2 +1,264 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
-@import 'header'
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+
+$r_blue: #19458d;
+$r_yellow: #efaa1e;
+
+body {
+    font-family: Lato, sans-serif;
+    position: relative;
+    color: #000;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 0 0 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+
+@media (min-width:768px) {
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0 0 35px;
+    }
+}
+
+
+a {
+    transition: all .2s ease-in-out;
+    color: $r_yellow;
+
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $r_blue;
+    }
+
+}
+
+#mainNav {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    background-color: #fff;
+
+
+
+    .nav-link.active {
+        outline: none;
+        background-color: rgba($color:$r_yellow, $alpha: 0.4);
+
+        &:hover {
+            background-color: rgba($color:$r_yellow, $alpha: 0.4);
+        }
+
+    }
+
+    .nav-link {
+
+        a {
+            &:hover {
+                background-color: rgba($color:$r_yellow, $alpha: 0.2);
+                ;
+            }
+        }
+
+    }
+
+
+
+    .navbar-toggler {
+        font-size: 14px;
+        padding: 11px;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    a {
+        color: #fff;
+
+
+
+
+        img {
+            width: 2em;
+            height: 2em;
+        }
+    }
+
+
+    .navbar-nav {
+
+
+        .nav-item {
+            transition: background .3s ease-in-out;
+
+
+            &:active,
+            &:focus,
+            &:hover {
+                outline: none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:992px) {
+    #mainNav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+        letter-spacing: 1px;
+        background: transparent;
+    }
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    border-bottom: 1px #19458d2d solid;
+
+    a {
+        color: $r_blue;
+    }
+}
+
+
+.masthead {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    background-size: cover;
+
+
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+
+
+        .brand-heading {
+            font-size: 50px;
+            font-family: Lato;
+        }
+
+        .intro-text {
+            font-size: 18px;
+            font-family: Lato;
+        }
+
+    }
+}
+
+
+@media (min-width:768px) {
+
+    .masthead {
+        height: 100%;
+        padding: 0;
+
+
+        .intro-body {
+
+
+            .brand-heading {
+                font-size: 100px;
+            }
+
+            .intro-text {
+                font-size: 22px;
+            }
+
+        }
+    }
+
+}
+
+.content-section {
+    padding-top: 150px;
+    padding-bottom: 150px
+}
+
+.offer-section {
+    color: #000;
+    background-color: rgba($color:$r_blue, $alpha: 0.1);
+    background-size: cover;
+}
+
+#map {
+    width: 100%;
+    height: 300px
+}
+
+@media (min-width:992px) {
+    .content-section {
+        padding-top: 200px;
+        padding-bottom: 200px
+    }
+
+    #map {
+        height: 350px
+    }
+}
+
+
+footer {
+    padding: 50px 0;
+
+
+    p {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+@media (max-width:992px) {
+    #mainNav {
+        a {
+            color: $r_blue;
+        }
+
+        .fa-bars {
+            color: $r_blue;
+        }
+    }
+}

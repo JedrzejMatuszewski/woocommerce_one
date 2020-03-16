@@ -4,49 +4,75 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>About grayscale</h2>
-                    <p>Grayscale is a free Bootstrap theme. It can be yours right now, simply download the template on&nbsp;<a href="#">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                    <p>This theme features stock photos by&nbsp;<a href="#">Gratisography</a>&nbsp;along with a custom Google Maps skin courtesy of&nbsp;<a href="#">Snazzy Maps</a>.</p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquam neque. Cras eu sapien urna. In bibendum posuere felis, eget varius augue semper ac. Nam velit quam, iaculis et orci vel, eleifend efficitur sapien. Mauris nec elit vitae mauris tempor eleifend vitae sed libero. Vivamus at volutpat erat. Praesent vitae purus non leo condimentum fringilla. In a quam vitae felis euismod auctor. Vestibulum eros est, malesuada quis lectus ac, dapibus euismod nunc. Cras blandit posuere neque finibus euismod. Praesent risus mauris, tristique id purus at, iaculis lobortis sapien. Mauris sodales quam id aliquam congue. Suspendisse potenti. Praesent facilisis eleifend magna, in malesuada mauris faucibus a. Etiam molestie ac purus in rhoncus.
-                    Suspendisse potenti. Fusce vel metus nulla. Pellentesque rhoncus volutpat dui. Sed eu blandit orci. Vivamus tincidunt rhoncus vestibulum. Aliquam varius est sit amet lectus bibendum tincidunt. Vivamus lacus urna, bibendum nec urna quis, bibendum gravida ex. Ut non aliquet justo. Integer tincidunt iaculis tristique. Suspendisse potenti. In vel sapien lobortis, egestas purus at, accumsan mi. Duis interdum, arcu id ornare hendrerit, sem dolor luctus elit, sit amet dignissim sem sem nec nisi. Sed condimentum erat ac dui imperdiet vulputate.
-                    </p>
-                    </div>
+                    <h2>O Nas</h2>
+                    <p>Zakład produkcyjny młody (powstał w 2016 r), a więc z dużym potencjałem. Produkuje artykuły
+                        jednorazowe z włóknin PP i innych przyjaznych skórze ludzkiej i jednocześnie łatwych do
+                        utylizacji. Produkty są bardzo estetyczne, zapewniające komfort użytkowy. Przyjmuje zlecenia
+                        indywidualne na inne artykuły włókninowe wg zapotrzebowania zleceniodawcy. Produkcja z
+                        zastosowaniem ultradźwiękowej metody łączenia szwów. Produkcja jednorazowych artykułów ochrony
+                        indywidualnej.</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="download" class="download-section content-section text-center" style="background-image:url('assets/img/downloads-bg.jpg');">
+    <section id="offer" class="offer-section content-section text-center">
         <div class="container">
-            <div class="col-lg-8 mx-auto">
-                <h1>Download Grayscale</h1>
-                <p>You can download Grayscale for free on the preview page.</p><button class="btn btn-primary btn-lg btn-default" type="button">visit download page</button></div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquam neque. Cras eu sapien urna. In bibendum posuere felis, eget varius augue semper ac. Nam velit quam, iaculis et orci vel, eleifend efficitur sapien. Mauris nec elit vitae mauris tempor eleifend vitae sed libero. Vivamus at volutpat erat. Praesent vitae purus non leo condimentum fringilla. In a quam vitae felis euismod auctor. Vestibulum eros est, malesuada quis lectus ac, dapibus euismod nunc. Cras blandit posuere neque finibus euismod. Praesent risus mauris, tristique id purus at, iaculis lobortis sapien. Mauris sodales quam id aliquam congue. Suspendisse potenti. Praesent facilisis eleifend magna, in malesuada mauris faucibus a. Etiam molestie ac purus in rhoncus.
-                    Suspendisse potenti. Fusce vel metus nulla. Pellentesque rhoncus volutpat dui. Sed eu blandit orci. Vivamus tincidunt rhoncus vestibulum. Aliquam varius est sit amet lectus bibendum tincidunt. Vivamus lacus urna, bibendum nec urna quis, bibendum gravida ex. Ut non aliquet justo. Integer tincidunt iaculis tristique. Suspendisse potenti. In vel sapien lobortis, egestas purus at, accumsan mi. Duis interdum, arcu id ornare hendrerit, sem dolor luctus elit, sit amet dignissim sem sem nec nisi. Sed condimentum erat ac dui imperdiet vulputate.
-                </p>
+            <div class="col-lg-8 mx-auto text-left">
+                <h1 class="text-center">Oferta</h1>
+                <p>Produkty wykonane z włóknin nieszkodliwych dla skóry człowieka, miękkich i zapewniających komfort
+                    fizjologiczny. Wyjątkowa jakość: łączenie szwów metodą ultradźwiękową zapewnia szczelność, odzież
+                    nie ograniczająca ruchów i jednocześnie dzięki ergonomicznym krojom wygodna i estetyczna.</p>
+                <h3>Przeznaczenie</h3>
+                <ul>
+                    <li>Personel zakładów świadczących usługi medyczne</li>
+                    <li>Pacjenci placówek medycznych /min. dla kobiet podczas porodu i po porodzie, inna odzież
+                        zabiegowa dla dzieci i dorosłych</li>
+                    <li>Pracownicy i klienci gabinetów medycyny estetycznej, kosmetologicznych, fryzjerskich</li>
+                    <li>Pracownicy zakładów oczyszczania ścieków i usuwania odpadów</li>
+                    <li>Pracujący ze zwierzętami</li>
+                    <li>Pracownicy sektorów rolniczych, spożywczych, usługowych</li>
+                    <li>Dzieci szkolne i przedszkolne: ochrona podczas zajęć np. z farbami, gliną podczas zajęć
+                        plastycznych</li>
+                </ul>
+                <h3>Cel</h3>
+                <p>Artykuły ochrony osobistej zapobiegają przedostawaniu się czynników infekcyjnych do skóry i na inne
+                    osoby. Odzież jednorazowa stanowi barierę ochronną dla całości lub części ciała, chroni przed
+                    zabrudzeniem odzieży własnej, zapewnia higienę w przebiegu produkcji i dystrybucji np. spożywczej,
+                    zapewnia intymność podczas zabiegów medycznych i kosmetycznych.</p>
+                <h3>Usługi</h3>
+                <ul>
+                    <li>Łączenie, zgrzewanie włóknin metodą ultradźwiękową</li>
+                    <li>Produkcja na indywidualne zamówienie takich rzeczy jak: torebki, euti, filtry, pokrowce ochronne
+                        na fotele samochodowe itp.</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="contact" class="content-section text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Contact us</h2>
-                    <p>Feel free to leave us a comment on the<a href="#">&nbsp;Grayscale template overview page</a>&nbsp;to give some feedback about this theme!</p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquam neque. Cras eu sapien urna. In bibendum posuere felis, eget varius augue semper ac. Nam velit quam, iaculis et orci vel, eleifend efficitur sapien. Mauris nec elit vitae mauris tempor eleifend vitae sed libero. Vivamus at volutpat erat. Praesent vitae purus non leo condimentum fringilla. In a quam vitae felis euismod auctor. Vestibulum eros est, malesuada quis lectus ac, dapibus euismod nunc. Cras blandit posuere neque finibus euismod. Praesent risus mauris, tristique id purus at, iaculis lobortis sapien. Mauris sodales quam id aliquam congue. Suspendisse potenti. Praesent facilisis eleifend magna, in malesuada mauris faucibus a. Etiam molestie ac purus in rhoncus.
-                    Suspendisse potenti. Fusce vel metus nulla. Pellentesque rhoncus volutpat dui. Sed eu blandit orci. Vivamus tincidunt rhoncus vestibulum. Aliquam varius est sit amet lectus bibendum tincidunt. Vivamus lacus urna, bibendum nec urna quis, bibendum gravida ex. Ut non aliquet justo. Integer tincidunt iaculis tristique. Suspendisse potenti. In vel sapien lobortis, egestas purus at, accumsan mi. Duis interdum, arcu id ornare hendrerit, sem dolor luctus elit, sit amet dignissim sem sem nec nisi. Sed condimentum erat ac dui imperdiet vulputate.
-                </p>
-                    <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
-                    </ul>
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Kontakt</h2>
+                    <p class="mb-5">RINOME spółka cywilna Katarzyna i Piotr Nowak<br>NIP: 7851808728</p>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-lg-3 ml-auto text-center"><i class="fas fa-map-marked-alt fa-4x mb-3" data-aos="zoom-in"
+                        data-aos-duration="300" data-aos-once="true"></i>
+                    <p>ul. Gogolewska 10,<br>63-130 Zakrzewice</p>
+                </div>
+                <div class="col-lg-3 text-center"><i class="fa fa-phone fa-4x mb-3" data-aos="zoom-in"
+                        data-aos-duration="300" data-aos-once="true"></i>
+                    <p> 505 663 107</p>
+                </div>
+                <div class="col-lg-3 mr-auto text-center"><i class="fa fa-envelope-o fa-4x mb-3" data-aos="zoom-in"
+                        data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
+                    <p><a href="mailto:rinome.sc@gmail.com">rinome.sc@gmail.com</a></p>
+                </div>
+            </div>
     </section>
-    <div class="map-clean"><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAbODsGcyVYRKrqDsxn7Lt4wM6q-OF-ToE&amp;q=RINOME+sp%C3%B3%C5%82ka+cywilna+Katarzyna+i+Piotr+Nowak%2C+Gogolewska+10%2C+63-130+Zakrzewice&amp;zoom=13"
+    <div class="map-clean"><iframe allowfullscreen="" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAbODsGcyVYRKrqDsxn7Lt4wM6q-OF-ToE&amp;q=RINOME+sp%C3%B3%C5%82ka+cywilna+Katarzyna+i+Piotr+Nowak%2C+Gogolewska+10%2C+63-130+Zakrzewice&amp;zoom=13"
             width="100%" height="450"></iframe></div>
-
 
 <?php get_footer();?>
