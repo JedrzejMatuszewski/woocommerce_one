@@ -10982,6 +10982,30 @@ a:focus {
   outline: none;
 }
 
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  background-size: cover;
+}
+
+.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.masthead .intro-body .brand-heading {
+  font-family: "Kaushan Script", cursive;
+}
+
+.masthead .intro-body .intro-text {
+  font-family: Lato;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 20px;
@@ -11014,30 +11038,13 @@ a:focus {
   color: #19458d;
 }
 
-.masthead {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 200px 0;
-  text-align: center;
+a.bt-home-a {
   color: #fff;
-  background-color: #000;
-  background-size: cover;
+  font-size: 0.8rem;
 }
 
-.masthead .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.masthead .intro-body .brand-heading {
-  font-size: 50px;
-  font-family: Lato;
-}
-
-.masthead .intro-body .intro-text {
-  font-size: 18px;
-  font-family: Lato;
+.bt-home {
+  border-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -11047,11 +11054,15 @@ a:focus {
   }
 
   .masthead .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 50px;
   }
 
   .masthead .intro-body .intro-text {
     font-size: 22px;
+  }
+
+  a.bt-home-a {
+    font-size: 1rem;
   }
 }
 
@@ -11079,6 +11090,23 @@ a:focus {
 
   #map {
     height: 350px;
+  }
+
+  .masthead {
+    height: 100%;
+    padding: 0;
+  }
+
+  .masthead .intro-body .brand-heading {
+    font-size: 100px;
+  }
+
+  .masthead .intro-body .intro-text {
+    font-size: 24px;
+  }
+
+  a.bt-home-a {
+    font-size: 1.2rem;
   }
 }
 
@@ -11123,5 +11151,51 @@ section.p404 {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.woocommerce .woocommerce-input-wrapper {
+  width: 100%;
+  display: block;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+  padding: 0.25rem;
+  background: rgba(239, 170, 30, 0.2);
+  height: 30px;
+  border: 0;
+}
+
+.woocommerce ul.products li.product {
+  text-align: center;
+}
+
+.woocommerce a.button {
+  background-color: #19458d;
+  color: #fff;
+}
+
+.woocommerce a.button:hover {
+  color: #f0f0f0;
+  background-color: rgba(25, 69, 141, 0.8);
+}
+
+.woocommerce span.onsale {
+  background-color: #efaa1e;
+}
+
+.woocommerce ul.products li.product .price {
+  font-size: 1.1em;
+}
+
+ul.products li.product .woocommerce-loop-product__title {
+  font-size: 1.2em;
+}
+
+.woocommerce .woocommerce-ordering select {
+  border: none;
+  padding: 0.25rem;
+  color: #fff;
+  background-color: #19458d;
 }
 

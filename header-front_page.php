@@ -12,21 +12,14 @@
 <body id="page-top" <?php body_class(); ?>>
     <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="<?php bloginfo('url'); ?>/#"> <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="page-logo"> Rinome</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
-
-            <?php
-            wp_nav_menu(array(
-                'theme_location'  => 'topnav',
-                'menu'            => 'topnav',
-                'container'       => 'div',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'navbarResponsive',
-                'menu_class'      => '',
-                'echo'            => true,
-                'fallback_cb'     => 'wp_page_menu',
-                'items_wrap'      => '<ul class="nav navbar-nav ml-auto %2$s">%3$s</ul>',
-                'depth'           => 0
-            ));
-            ?>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link active js-scroll-trigger" href="#about">O Nas</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#offer">Oferta</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="<?php bloginfo('url'); ?>/sklep">Sklep</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
 
         </div>
     </nav>
@@ -37,6 +30,7 @@
                     <div class="col-lg-8 mx-auto">
                         <h1 class="brand-heading">Rinome</h1>
                         <p class="intro-text">Jednorazowe artykuły ochrony indywidualnej</p>
+                        <button type="button" class="btn btn-outline-info bt-home"><a class="bt-home-a" href="<?php bloginfo('url'); ?>/sklep">Przejdź do sklepu</a></button>
                     </div>
                 </div>
             </div>
