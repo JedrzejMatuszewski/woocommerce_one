@@ -10902,7 +10902,6 @@ h5,
 h6 {
   font-family: Lato, sans-serif;
   font-weight: 700;
-  margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -11145,6 +11144,11 @@ section.p404 {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
+}
+
+.widget h4 {
+  font-size: 1.15rem;
 }
 
 .widget ul {
@@ -11170,16 +11174,6 @@ section.p404 {
   text-align: center;
 }
 
-.woocommerce a.button {
-  background-color: #19458d;
-  color: #fff;
-}
-
-.woocommerce a.button:hover {
-  color: #f0f0f0;
-  background-color: rgba(25, 69, 141, 0.8);
-}
-
 .woocommerce span.onsale {
   background-color: #efaa1e;
 }
@@ -11197,5 +11191,140 @@ ul.products li.product .woocommerce-loop-product__title {
   padding: 0.25rem;
   color: #fff;
   background-color: #19458d;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: auto;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #19458d;
+  color: #fff;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  color: #f0f0f0;
+  background-color: #113368;
+}
+
+.woocommerce .quantity .qty {
+  padding: 0.35em;
+}
+
+.wpgs-for .slick-arrow,
+.wpgs-nav .slick-prev::before,
+.wpgs-nav .slick-next::before {
+  color: #f0f0f0;
+}
+
+.woocommerce-message {
+  border-top-color: #19458d;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+  background-color: #19458d;
+}
+
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+  background-color: #19458d5e;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: #19458d;
+}
+
+.woocommerce-product-search input#woocommerce-product-search-field-0 {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+  width: 60%;
+  margin: 0;
+  padding: 2%;
+  border: none;
+  background-color: #19458d5e;
+  color: #fff;
+}
+
+.woocommerce-product-search input#woocommerce-product-search-field-0::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.woocommerce-product-search input#woocommerce-product-search-field-0::-moz-placeholder {
+  color: #fff;
+}
+
+.woocommerce-product-search input#woocommerce-product-search-field-0:-ms-input-placeholder {
+  color: #fff;
+}
+
+.woocommerce-product-search input#woocommerce-product-search-field-0::-ms-input-placeholder {
+  color: #fff;
+}
+
+.woocommerce-product-search input#woocommerce-product-search-field-0::placeholder {
+  color: #fff;
+}
+
+.woocommerce-product-search button:not(:disabled),
+.woocommerce-product-search [type=button]:not(:disabled),
+.woocommerce-product-search [type=reset]:not(:disabled),
+.woocommerce-product-search [type=submit]:not(:disabled) {
+  cursor: pointer;
+  width: 36%;
+  padding: 2%;
+  margin: 0;
+  border: none;
+  background-color: #19458d;
+  color: #fff;
+}
+
+.woocommerce-product-search button:not(:disabled):hover,
+.woocommerce-product-search [type=button]:not(:disabled):hover,
+.woocommerce-product-search [type=reset]:not(:disabled):hover,
+.woocommerce-product-search [type=submit]:not(:disabled):hover {
+  color: #f0f0f0;
+  background-color: #113368;
+}
+
+input#woocommerce-product-search-field-0 {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+  width: 60%;
+  margin: 0;
+  padding: 2%;
+  border: none;
+  background-color: #19458d5e;
+  color: #fff;
+}
+
+input#woocommerce-product-search-field-0::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input#woocommerce-product-search-field-0::-moz-placeholder {
+  color: #fff;
+}
+
+input#woocommerce-product-search-field-0:-ms-input-placeholder {
+  color: #fff;
+}
+
+input#woocommerce-product-search-field-0::-ms-input-placeholder {
+  color: #fff;
+}
+
+input#woocommerce-product-search-field-0::placeholder {
+  color: #fff;
 }
 

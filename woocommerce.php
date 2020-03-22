@@ -3,14 +3,25 @@
 <div class="main-container container">
     <div class="row">
 
-        <div class="col-lg-3 mx-auto">
+        <?php if (is_product()) : ?>
 
-            <?php get_sidebar(); ?>
+            <div class="col-lg-12 mx-auto">
+                <?php woocommerce_content(); ?>
+            </div>
 
-        </div>
-        <div class="col-lg-9 mx-auto">
-            <?php woocommerce_content(); ?>
-        </div>
+        <?php else : ?>
+
+            <div class="col-lg-3 mx-auto">
+
+                <?php get_sidebar(); ?>
+
+            </div>
+            <div class="col-lg-9 mx-auto">
+                <?php woocommerce_content(); ?>
+            </div>
+
+        <?php endif; ?>
+
     </div>
 </div>
 
