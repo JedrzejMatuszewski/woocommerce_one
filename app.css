@@ -11144,7 +11144,7 @@ section.p404 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .widget h4 {
@@ -11157,6 +11157,32 @@ section.p404 {
   margin: 0;
 }
 
+.widget .cat-item {
+  font-size: 1.1rem;
+  background-color: #aabad5;
+  padding: 0.3rem;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.widget .cat-item:hover {
+  background-color: #19458d;
+}
+
+.widget .cat-item a {
+  color: #fff;
+}
+
+.widget .cat-item a:hover {
+  color: #fff;
+}
+
+.widget .current-cat {
+  background-color: #19458d;
+}
+
 .woocommerce .woocommerce-input-wrapper {
   width: 100%;
   display: block;
@@ -11164,10 +11190,17 @@ section.p404 {
 
 .woocommerce form .form-row input.input-text,
 .woocommerce form .form-row textarea {
-  padding: 0.25rem;
-  background: rgba(239, 170, 30, 0.2);
-  height: 30px;
-  border: 0;
+  padding: 0.4rem;
+  background: rgba(25, 69, 141, 0.08);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px 0px #19458d;
+}
+
+.woocommerce form .form-row input.input-text:focus,
+.woocommerce form .form-row textarea:focus {
+  border: 1px solid #19458d;
+  box-shadow: none;
 }
 
 .woocommerce ul.products li.product {
@@ -11176,6 +11209,8 @@ section.p404 {
 
 .woocommerce span.onsale {
   background-color: #efaa1e;
+  border-radius: 0;
+  transform: skew(-20deg);
 }
 
 .woocommerce ul.products li.product .price {
@@ -11254,6 +11289,7 @@ ul.products li.product .woocommerce-loop-product__title {
   border: none;
   background-color: #19458d5e;
   color: #fff;
+  border-radius: 3px;
 }
 
 .woocommerce-product-search input#woocommerce-product-search-field-0::-webkit-input-placeholder {
@@ -11285,6 +11321,7 @@ ul.products li.product .woocommerce-loop-product__title {
   padding: 2%;
   margin: 0;
   border: none;
+  border-radius: 3px;
   background-color: #19458d;
   color: #fff;
 }
@@ -11306,6 +11343,7 @@ input#woocommerce-product-search-field-0 {
   border: none;
   background-color: #19458d5e;
   color: #fff;
+  border-radius: 3px;
 }
 
 input#woocommerce-product-search-field-0::-webkit-input-placeholder {
@@ -11326,5 +11364,20 @@ input#woocommerce-product-search-field-0::-ms-input-placeholder {
 
 input#woocommerce-product-search-field-0::placeholder {
   color: #fff;
+}
+
+a.button.wc-forward {
+  width: 48%;
+  padding: 4% 2%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p.woocommerce-mini-cart__total.total {
+  margin: 0;
+}
+
+ul.products li.product .star-rating {
+  margin: 0.4rem auto;
 }
 
