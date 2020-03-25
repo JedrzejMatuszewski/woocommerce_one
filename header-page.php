@@ -49,5 +49,49 @@
             ));
             ?>
 
+
+
+            <?php if (is_user_logged_in()) : ?>
+
+
+                <div class="nav__top__user">
+                    <div class="nav__top__user_bottom">
+                        <p class="nav__top__user_msg msg1">Ptaki lecą kluczem</p>
+                        <nav class="woocommerce-MyAccount-navigation">
+                            <ul>
+                                <?php foreach (wc_get_account_menu_items() as $endpoint => $label) : ?>
+                                    <li class="<?php echo wc_get_account_menu_item_classes($endpoint); ?>">
+                                        <a href="<?php echo esc_url(wc_get_account_endpoint_url($endpoint)); ?>"><?php echo esc_html($label); ?></a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </nav>
+                    </div>
+                    <p class="nav__top__user_msg msg2">Witaj,
+                        <?php
+                        $current_user = wp_get_current_user();
+                        echo $current_user->display_name;
+                        ?>
+                    </p>
+                </div>
+
+
+            <?php else : ?>
+
+
+                <div class="nav__top__user">
+                    <div class="nav__top__user_bottom">
+                        <p class="nav__top__user_msg msg1">Nie jesteś zalogowany</p>
+                        <a class="btn btn-nav-login" href="<?php bloginfo('url'); ?>/logowanie">Zaloguj się</a>
+                        <a class="btn btn-nav-register" href="<?php bloginfo('url'); ?>/rejestracja">Zarejestruj się</a>
+                    </div>
+                    <p class="nav__top__user_msg msg2">Witaj, Guest!</p>
+                </div>
+
+
+            <?php endif; ?>
+
+
+
         </div>
     </nav>

@@ -2,10 +2,7 @@
 
 <div class="main-container container">
     <div class="row">
-        <div class="col-lg-3 mx-auto">
-            <?php get_sidebar(); ?>
-        </div>
-        <div class="col-lg-9 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <?php if (has_post_thumbnail()) : ?>
                 <img class="img-fluid mb-4" src="<?php the_post_thumbnail_url('post_image') ?>" alt="post-img">
             <?php endif; ?>
