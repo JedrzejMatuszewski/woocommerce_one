@@ -5,12 +5,10 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>O Nas</h2>
-                <p>Zakład produkcyjny młody (powstał w 2016 r), a więc z dużym potencjałem. Produkuje artykuły
-                    jednorazowe z włóknin PP i innych przyjaznych skórze ludzkiej i jednocześnie łatwych do
-                    utylizacji. Produkty są bardzo estetyczne, zapewniające komfort użytkowy. Przyjmuje zlecenia
-                    indywidualne na inne artykuły włókninowe wg zapotrzebowania zleceniodawcy. Produkcja z
-                    zastosowaniem ultradźwiękowej metody łączenia szwów. Produkcja jednorazowych artykułów ochrony
-                    indywidualnej.</p>
+                <p>Ponad 20-sto letnie doświadczenie w prowadzeniu działalności gospodarczej pozwoliło nam sięgnąć jeszcze wyżej
+                    i wspomóc naszą służbę zdrowia oraz zadbać o naszą planetę poprzez produkcję w pełni poddających się recyklingowi artykułów
+                    jednorazowego użytku. <strong>Firma&nbsp;w&nbsp;nasze ręce trafiła</strong> pod koniec 2019 roku. Stawiamy na rodzimych dostawców, którzy gwarantują najwyższą jakość materiału.
+                    Jesteśmy małą firmą, ale z dużymi ambicjami.</p>
 
 
 

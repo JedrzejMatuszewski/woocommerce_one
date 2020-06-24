@@ -11,6 +11,7 @@ $r_blue: #19458d;
 $r_blue_darker: #113368;
 $r_blue_light: #aabad5;
 $r_yellow: #efaa1e;
+$r_yellow_darker: #c08715;
 
 body {
     font-family: Lato, sans-serif;
@@ -33,20 +34,28 @@ h6 {
     font-family: Lato, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+}
+
+h1 {
+    margin-bottom: 30px;
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 25px;
+    //margin: 0 0 25px;
+}
+
+.main-container {
+    min-height: 80vh;
 }
 
 @media (min-width:768px) {
     p {
         font-size: 18px;
         line-height: 1.6;
-        margin: 0 0 35px;
+        //margin: 0 0 35px;
     }
 }
 
@@ -59,7 +68,7 @@ a {
     &:hover,
     &:focus {
         text-decoration: none;
-        color: $r_blue;
+        color: $r_yellow_darker;
     }
 
 }
@@ -723,18 +732,7 @@ ul.products li.product .star-rating {
 
 //Quest
 
-.nav__top__user_msg {
-    text-align: center;
-    font-size: 1rem;
-    color: $r_blue;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
 
-.msg1 {
-    text-transform: none !important;
-}
 
 .nav__top__user {
     display: flex;
@@ -749,8 +747,27 @@ ul.products li.product .star-rating {
         .nav__top__user_bottom {
             display: block;
         }
+
     }
 
+    .nav__top__user_msg {
+        text-align: center;
+        font-size: 1rem;
+        color: $r_blue;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .msg1 {
+        text-transform: none;
+        font-size: 1rem;
+    }
+
+    .msg2 {
+        border-bottom: 1px solid $r_blue_light;
+        text-transform: none;
+    }
 
     .nav__top__user_bottom {
         z-index: 999;
@@ -778,6 +795,37 @@ ul.products li.product .star-rating {
             width: 100%;
         }
 
+        .btn-nav-login-yellow {
+            background-color: $r_yellow;
+        }
+
     }
 
+
+
+}
+
+
+// Logowanie i rejestracja /moje-konto/
+
+span.password-input {
+    width: 100%;
+}
+
+.woocommerce .woocommerce-form-login .woocommerce-form-login__rememberme {
+    margin-right: 10px;
+}
+
+// Przycisk login na 100%
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+    width: 100%;
+}
+
+button.woocommerce-Button.woocommerce-button.button.woocommerce-form-register__submit {
+    width: 100%;
+}
+
+.woocommerce form .form-row {
+    padding: 3px;
+    margin: 0 0 6px;
 }

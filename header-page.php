@@ -56,24 +56,17 @@
 
                 <div class="nav__top__user">
                     <div class="nav__top__user_bottom">
-                        <p class="nav__top__user_msg msg1">Ptaki lecą kluczem</p>
-                        <nav class="woocommerce-MyAccount-navigation">
-                            <ul>
-                                <?php foreach (wc_get_account_menu_items() as $endpoint => $label) : ?>
-                                    <li class="<?php echo wc_get_account_menu_item_classes($endpoint); ?>">
-                                        <a href="<?php echo esc_url(wc_get_account_endpoint_url($endpoint)); ?>"><?php echo esc_html($label); ?></a>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </nav>
+                        <a class="btn btn-nav-login btn-nav-login-yellow" href="<?php bloginfo('url'); ?>/moje-konto">Moje konto</a>
+                        <a class="btn btn-nav-login" href="<?php echo wp_logout_url(get_permalink()); ?>">Wyloguj się</a>
                     </div>
                     <p class="nav__top__user_msg msg2">Witaj,
                         <?php
                         $current_user = wp_get_current_user();
                         echo $current_user->display_name;
-                        ?>
+                        ?>!
                     </p>
                 </div>
+
 
 
             <?php else : ?>
@@ -82,10 +75,9 @@
                 <div class="nav__top__user">
                     <div class="nav__top__user_bottom">
                         <p class="nav__top__user_msg msg1">Nie jesteś zalogowany</p>
-                        <a class="btn btn-nav-login" href="<?php bloginfo('url'); ?>/logowanie">Zaloguj się</a>
-                        <a class="btn btn-nav-register" href="<?php bloginfo('url'); ?>/rejestracja">Zarejestruj się</a>
+                        <a class="btn btn-nav-login" href="<?php bloginfo('url'); ?>/moje-konto">Login / Rejestracja</a>
                     </div>
-                    <p class="nav__top__user_msg msg2">Witaj, Guest!</p>
+                    <p class="nav__top__user_msg">Witaj, Guest!</p>
                 </div>
 
 

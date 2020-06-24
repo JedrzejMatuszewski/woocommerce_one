@@ -1,6 +1,7 @@
 <footer>
     <div class="container text-center">
         <p>Platforma testowa witryny <a href="http://rinome.net">rinome.net</a></p>
+        <p><a href="<?php bloginfo('url'); ?>/regulamin">Regulamin</a> | <a href="<?php bloginfo('url'); ?>/polityka-prywatnosci">Polityka Prywatności</a></p>
         <p>Copyright ©&nbsp; RINOME s.c. Katarzyna i Piotr Nowak 2020</p>
     </div>
 </footer>
