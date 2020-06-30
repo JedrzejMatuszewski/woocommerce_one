@@ -11163,6 +11163,12 @@ section.p404 {
 }
 
 .widget .cat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget .cat-item a {
+  color: #fff;
   font-size: 1.1rem;
   background-color: #aabad5;
   padding: 0.3rem;
@@ -11172,20 +11178,32 @@ section.p404 {
   transition: all 0.3s ease-in-out;
 }
 
-.widget .cat-item:hover {
-  background-color: #19458d;
-}
-
-.widget .cat-item a {
-  color: #fff;
-}
-
 .widget .cat-item a:hover {
+  background-color: #19458d;
   color: #fff;
 }
 
-.widget .current-cat {
+.widget .current-cat a {
   background-color: #19458d;
+}
+
+#all_products {
+  display: flex;
+  flex-direction: column;
+}
+
+#all_products a {
+  background-color: #19458d;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#all_products a:hover {
+  background-color: #113368;
+  color: #fff;
 }
 
 .woocommerce .woocommerce-input-wrapper {
@@ -11392,7 +11410,6 @@ input#woocommerce-product-search-field-0::placeholder {
 }
 
 a.button.wc-forward {
-  width: 100%;
   padding: 10px 5px;
   font-size: 1rem;
   text-align: center;
@@ -11551,9 +11568,9 @@ ul.products li.product .star-rating {
   z-index: 999;
   display: none;
   position: absolute;
-  width: 200px;
+  width: 150px;
   top: 100%;
-  left: -73px;
+  left: 0;
   background-color: #fff;
   border-radius: 0.2rem;
   padding: 5px;
@@ -11601,5 +11618,106 @@ button.woocommerce-Button.woocommerce-button.button.woocommerce-form-register__s
 
 .slick-list.draggable {
   max-height: 440px;
+}
+
+.product_meta {
+  display: flex;
+  flex-direction: column;
+}
+
+a.added_to_cart.wc-forward {
+  display: none;
+}
+
+a.reset_variations {
+  display: none;
+}
+
+td.value a {
+  display: none;
+  visibility: hidden;
+}
+
+.woocommerce div.product form.cart .variations {
+  margin-bottom: 1em;
+  border: 0;
+  width: auto;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+  padding-right: 3px;
+}
+
+td.value {
+  max-width: 125px;
+  padding: 4px;
+  top: 0;
+}
+
+.woocommerce div.product form.cart .variations select {
+  margin-right: 3px;
+  width: 80px;
+  height: 50px;
+  border: none;
+  background-color: #19458d0d;
+  text-align: center;
+}
+
+.single_variation_wrap {
+  width: 100%;
+}
+
+form.variations_form.cart {
+  margin-top: 50px;
+}
+
+.woocommerce-variation.single_variation {
+  top: -25px;
+  position: relative;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+  position: relative;
+  top: -35px;
+  display: flex;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+  display: flex;
+  padding-top: 4px;
+}
+
+.variations tbody tr td.label {
+  padding-top: 14px;
+}
+
+.masthead .intro-body .brand-heading {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 300;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  min-height: 55px;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  min-height: 38px;
+  padding: 0;
+}
+
+.woocommerce ul.products li.product .price {
+  margin-bottom: 0;
+}
+
+.woocommerce ul.products li.product .button {
+  margin-top: 0;
+}
+
+.woocommerce ul.products li.product {
+  text-align: center;
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 

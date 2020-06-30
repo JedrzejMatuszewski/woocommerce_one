@@ -73,11 +73,11 @@
 
 
                 <div class="nav__top__user">
-                    <div class="nav__top__user_bottom">
+                    <div class="nav__top__user_bottom" style="width:200px; left:-110px;">
                         <p class="nav__top__user_msg msg1">Nie jesteś zalogowany</p>
                         <a class="btn btn-nav-login" href="<?php bloginfo('url'); ?>/moje-konto">Login / Rejestracja</a>
                     </div>
-                    <p class="nav__top__user_msg">Witaj, Guest!</p>
+                    <p class="nav__top__user_msg msg2">Zaloguj się</p>
                 </div>
 
 

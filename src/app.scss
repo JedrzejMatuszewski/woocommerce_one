@@ -368,22 +368,21 @@ section.p404 {
 
 
     .cat-item {
-        font-size: 1.1rem;
-        background-color: $r_blue_light;
-        padding: .3rem;
-        margin-bottom: 3px;
-        border-radius: 3px;
-        text-align: center;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            background-color: $r_blue;
-        }
+        display: flex;
+        flex-direction: column;
 
         a {
             color: #fff;
+            font-size: 1.1rem;
+            background-color: $r_blue_light;
+            padding: .3rem;
+            margin-bottom: 3px;
+            border-radius: 3px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
+                background-color: $r_blue;
                 color: #fff;
             }
 
@@ -391,11 +390,32 @@ section.p404 {
     }
 
     .current-cat {
-        background-color: $r_blue;
+        a {
+            background-color: $r_blue;
+        }
     }
 
 }
 
+#all_products {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        background-color: $r_blue;
+        color: #fff;
+        font-size: 1.1rem;
+        padding: .3rem;
+        border-radius: 3px;
+        text-align: center;
+
+        &:hover {
+            background-color: $r_blue_darker;
+            color: #fff;
+        }
+    }
+
+}
 
 //woocommerce
 
@@ -611,7 +631,6 @@ input#woocommerce-product-search-field-0 {
 
 //widget ost przyciski   wKOSZYK
 a.button.wc-forward {
-    width: 100%;
     padding: 10px 5px;
     font-size: 1rem;
     text-align: center;
@@ -773,9 +792,9 @@ ul.products li.product .star-rating {
         z-index: 999;
         display: none;
         position: absolute;
-        width: 200px;
+        width: 150px;
         top: 100%;
-        left: -73px;
+        left: 0;
         background-color: #fff;
         border-radius: 0.2rem;
         padding: 5px;
@@ -834,3 +853,129 @@ button.woocommerce-Button.woocommerce-button.button.woocommerce-form-register__s
 .slick-list.draggable {
     max-height: 440px;
 }
+
+.product_meta {
+    display: flex;
+    flex-direction: column;
+}
+
+a.added_to_cart.wc-forward {
+    display: none;
+}
+
+//Warianty produktu-------------------------------
+a.reset_variations {
+    display: none;
+}
+
+td.value {
+    a {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.woocommerce div.product form.cart .variations {
+    margin-bottom: 1em;
+    border: 0;
+    width: auto;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+    padding-right: 3px;
+}
+
+td.value {
+    max-width: 125px;
+    padding: 4px;
+    top: 0;
+}
+
+.woocommerce div.product form.cart .variations select {
+    margin-right: 3px;
+    width: 80px;
+    height: 50px;
+    border: none;
+    background-color: #19458d0d;
+    text-align: center;
+}
+
+.single_variation_wrap {
+    width: 100%;
+}
+
+form.variations_form.cart {
+    margin-top: 50px;
+}
+
+.woocommerce-variation.single_variation {
+    top: -25px;
+    position: relative;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+    position: relative;
+    top: -35px;
+    display: flex;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+    display: flex;
+    padding-top: 4px;
+}
+
+.variations {
+    tbody {
+        tr {
+            td.label {
+                padding-top: 14px;
+            }
+        }
+    }
+}
+
+
+
+// end warianty ---------------------------
+
+.masthead .intro-body .brand-heading {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 300;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    min-height: 55px;
+}
+
+//.woocommerce ul.products li.product .star-rating {
+//    font-size: .857em;
+//    position: absolute;
+//    top: 275px;
+//    left: 54px;
+//}
+
+//DO MERGE
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    min-height: 38px;
+    padding: 0;
+}
+
+.woocommerce ul.products li.product .price {
+    margin-bottom: 0;
+}
+
+.woocommerce ul.products li.product .button {
+    margin-top: 0;
+}
+
+
+.woocommerce ul.products li.product {
+    text-align: center;
+    display: flex;
+    min-height: 330px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+//END MERGE --------------------------------------------
