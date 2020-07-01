@@ -11263,6 +11263,10 @@ ul.products li.product .woocommerce-loop-product__title {
   width: auto;
 }
 
+.button {
+  transition: linear 0.3s;
+}
+
 .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
@@ -11665,6 +11669,8 @@ td.value {
 
 .single_variation_wrap {
   width: 100%;
+  position: relative;
+  margin-top: 4px;
 }
 
 form.variations_form.cart {
@@ -11673,18 +11679,15 @@ form.variations_form.cart {
 
 .woocommerce-variation.single_variation {
   top: -25px;
-  position: relative;
+  position: absolute;
 }
 
 .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
-  position: relative;
-  top: -35px;
   display: flex;
 }
 
 .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
   display: flex;
-  padding-top: 4px;
 }
 
 .variations tbody tr td.label {
@@ -11719,5 +11722,37 @@ form.variations_form.cart {
   min-height: 330px;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.arrow {
+  display: block;
+  background-color: #19458d;
+  width: 200px;
+  padding: 5px;
+  position: relative;
+  top: -17px;
+  color: #fff;
+  text-align: right;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-right: 10px;
+  transition: linear 0.3s;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  border-top: 17px solid #fff;
+  border-bottom: 17px solid #fff;
+  border-right: 34px solid transparent;
+}
+
+.arrow:hover {
+  background-color: #113368;
+  color: #fff;
 }
 

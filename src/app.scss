@@ -495,7 +495,9 @@ ul.products li.product .woocommerce-loop-product__title {
     width: auto;
 }
 
-
+.button {
+    transition: linear 0.3s;
+}
 
 //koszyk buttony
 .woocommerce #respond input#submit,
@@ -902,6 +904,8 @@ td.value {
 
 .single_variation_wrap {
     width: 100%;
+    position: relative;
+    margin-top: 4px;
 }
 
 form.variations_form.cart {
@@ -910,18 +914,15 @@ form.variations_form.cart {
 
 .woocommerce-variation.single_variation {
     top: -25px;
-    position: relative;
+    position: absolute;
 }
 
 .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
-    position: relative;
-    top: -35px;
     display: flex;
 }
 
 .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
     display: flex;
-    padding-top: 4px;
 }
 
 .variations {
@@ -979,3 +980,38 @@ form.variations_form.cart {
 }
 
 //END MERGE --------------------------------------------
+
+
+//Arrow-left
+.arrow {
+    display: block;
+    background-color: $r_blue;
+    width: 200px;
+    padding: 5px;
+    position: relative;
+    top: -17px;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 3px;
+    padding-right: 10px;
+    transition: linear 0.3s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        border-top: 17px solid #fff;
+        border-bottom: 17px solid #fff;
+        border-right: 34px solid transparent;
+    }
+
+    &:hover {
+        background-color: $r_blue_darker;
+        color: #fff;
+    }
+
+}
