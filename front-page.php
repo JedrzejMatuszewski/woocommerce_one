@@ -1,15 +1,23 @@
 <?php get_header('front_page'); ?>
 
-<section id="about" class="content-section text-center">
+<section id="about" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2>O Nas</h2>
+                <h2 class="text-center">O Nas</h2>
                 <p>Ponad 20-sto letnie doświadczenie w prowadzeniu działalności gospodarczej pozwoliło nam sięgnąć jeszcze wyżej
                     i wspomóc naszą służbę zdrowia oraz zadbać o naszą planetę poprzez produkcję w pełni poddających się recyklingowi artykułów
-                    jednorazowego użytku. <strong>Firma&nbsp;w&nbsp;nasze ręce trafiła</strong> pod koniec 2019 roku. Stawiamy na rodzimych dostawców, którzy gwarantują najwyższą jakość materiału.
+                    jednorazowego użytku. Stawiamy na rodzimych dostawców, którzy gwarantują najwyższą jakość materiału.
                     Jesteśmy małą firmą, ale z dużymi ambicjami.</p>
 
+                <p>
+                    Głównym sposobem łączenia elementów jest spawanie ultradźwiękowe.
+                    Wykazuje ono bardzo wytrzymały sposób łączenia. Jego kolejną, ważną zaletą
+                    jest estetycznie i dobrze prezentujący się spaw. Natomiast elementy niemożliwe
+                    poddaniu zgrzewania są zszywane. Ponieważ robimy co możemy, aby sprostać
+                    zapotrzebowaniu w obecnym czasie na nasze produkty to każda maszyna pracuje
+                    tzn. szyjemy w całości oraz spawamy.
+                </p>
 
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -34,6 +42,13 @@
     <div class="container">
         <div class="col-lg-8 mx-auto text-left">
             <h1 class="text-center">Oferta</h1>
+            <p>Włóknina polipropylenowa w pełni podlega recyklingowi co stanowi jeden
+                z powodów, dlaczego stosujemy ją przy produkcji naszych wyrobów. Materiał ten
+                wykazuje wysoką elastyczność jest wytrzymały i odporny na przepuszczanie innych
+                substancji (pyłów oraz cieczy). Właściwości polipropylenu zapewniają zatem
+                szczelność, swobodne ruchy i jednocześnie dzięki ergonomicznym krojom jest
+                wygodna i estetyczna. Ze względu na niewielką zdatność do prania(wirowanie),
+                nasze produkty to artykuły głównie jednorazowego użytku.</p>
             <p>Produkty wykonane z włóknin nieszkodliwych dla skóry człowieka, miękkich i zapewniających komfort
                 fizjologiczny. Wyjątkowa jakość: łączenie szwów metodą ultradźwiękową zapewnia szczelność, odzież
                 nie ograniczająca ruchów i jednocześnie dzięki ergonomicznym krojom wygodna i estetyczna.</p>
@@ -60,6 +75,11 @@
                 <li>Produkcja na indywidualne zamówienie takich rzeczy jak: torebki, euti, filtry, pokrowce ochronne
                     na fotele samochodowe itp.</li>
             </ul>
+            <p>
+                Zapraszamy do naszego sklepu, gdzie znajdą państwo nasze produkty.
+                W przypadku większej ilości prosimy o kontakt w celu ustalenia terminu realizacji
+                oraz możliwego rabatu. Miłego dnia! :)
+            </p>
         </div>
     </div>
 </section>

@@ -10888,12 +10888,6 @@ body {
   color: #000;
 }
 
-body,
-html {
-  width: 100%;
-  height: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -10915,7 +10909,7 @@ p {
 }
 
 .main-container {
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 @media (min-width: 768px) {
@@ -11053,7 +11047,7 @@ a.bt-home-a {
 
 @media (min-width: 768px) {
   .masthead {
-    height: 100%;
+    height: 100vh;
     padding: 0;
   }
 
@@ -11097,7 +11091,7 @@ a.bt-home-a {
   }
 
   .masthead {
-    height: 100%;
+    height: 100vh;
     padding: 0;
   }
 
@@ -11476,24 +11470,29 @@ ul.products li.product .star-rating {
 
 .woocommerce div.product form.cart .button {
   vertical-align: middle;
-  float: left;
   height: 50px;
-  margin-left: 10px;
   width: 100%;
 }
 
 .woocommerce div.product form.cart {
   margin-bottom: 2em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .woocommerce .quantity .qty {
-  padding: 0.35em;
+  padding: 0;
+  margin: 0;
   height: 50px;
   border: none;
-  width: 80px;
   background-color: #19458d0d;
+}
+
+.woocommerce div.product form.cart div.quantity {
+  float: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .woocommerce div.product .product_title {
@@ -11633,34 +11632,8 @@ a.added_to_cart.wc-forward {
   display: none;
 }
 
-a.reset_variations {
-  display: none;
-}
-
-td.value a {
-  display: none;
-  visibility: hidden;
-}
-
-.woocommerce div.product form.cart .variations {
-  margin-bottom: 1em;
-  border: 0;
-  width: auto;
-}
-
-.woocommerce div.product form.cart .variations td.label {
-  padding-right: 3px;
-}
-
-td.value {
-  max-width: 125px;
-  padding: 4px;
-  top: 0;
-}
-
 .woocommerce div.product form.cart .variations select {
-  margin-right: 3px;
-  width: 80px;
+  width: 100%;
   height: 50px;
   border: none;
   background-color: #19458d0d;
@@ -11678,16 +11651,11 @@ form.variations_form.cart {
 }
 
 .woocommerce-variation.single_variation {
-  top: -25px;
+  top: 16px;
+  left: 200px;
   position: absolute;
-}
-
-.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
-  display: flex;
-}
-
-.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
-  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .variations tbody tr td.label {
@@ -11754,5 +11722,20 @@ form.variations_form.cart {
 .arrow:hover {
   background-color: #113368;
   color: #fff;
+}
+
+.woocommerce div.product form.cart div.quantity::before {
+  content: "Wprowad\17A   ilo\15B\107:";
+  font-weight: bold;
+  width: 130px;
+  padding-top: 15px;
+}
+
+td.label {
+  width: 80px;
+}
+
+li {
+  font-size: 18px;
 }
 
