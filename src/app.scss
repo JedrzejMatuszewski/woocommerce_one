@@ -52,12 +52,37 @@ p {
     //80
 }
 
+section#offer {
+    .container {
+        .col-lg-8 {
+            ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width:768px) {
     p {
         font-size: 18px;
         line-height: 1.6;
         //margin: 0 0 35px;
     }
+
+    section#offer {
+        .container {
+            .col-lg-8 {
+                ul {
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -1002,10 +1027,4 @@ form.variations_form.cart {
 
 td.label {
     width: 80px;
-}
-
-
-//homepage
-li {
-    font-size: 18px;
 }

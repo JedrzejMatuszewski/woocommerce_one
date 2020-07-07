@@ -107,3 +107,28 @@ function mytheme_add_woocommerce_support()
   ));
 }
 add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
+
+
+/**
+ * Filter payment gatways
+ * Removed bacs and przelewy24
+ */
+
+function my_custom_available_payment_gateways($gateways)
+{
+
+  $chosen_shipping_rates = WC()->session->get('chosen_shipping_methods');
+
+  if (in_array('flat_rate:3', $chosen_shipping_rates)) :
+    unset($gateways['bacs']);
+    unset($gateways['przelewy24']);
+  endif;
+
+  if (in_array('local_pickup:2', $chosen_shipping_rates)) :
+    unset($gateways['bacs']);
+    unset($gateways['przelewy24']);
+  endif;
+
+  return $gateways;
+}
+add_filter('woocommerce_available_payment_gateways', 'my_custom_available_payment_gateways');
