@@ -22,6 +22,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/img/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
     <?php wp_head(); ?>
 </head>
 
@@ -30,13 +31,45 @@
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="<?php bloginfo('url'); ?>/#"> <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="page-logo"> Rinome</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link active js-scroll-trigger" href="#about">O Nas</a></li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#offer">Oferta</a></li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="<?php bloginfo('url'); ?>/sklep">Sklep</a></li>
+					<li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="<?php bloginfo('url'); ?>/blog">Blog</a></li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a></li>
                 </ul>
             </div>
+		
+			<?php if (is_user_logged_in()) : ?>
 
+
+                <div class="nav__top__user">
+                    <div class="nav__top__user_bottom">
+                        <a class="btn btn-nav-login btn-nav-login-yellow" href="<?php bloginfo('url'); ?>/moje-konto">Moje konto</a>
+                        <a class="btn btn-nav-login" href="<?php echo wp_logout_url(get_permalink()); ?>">Wyloguj się</a>
+                    </div>
+                    <p class="nav__top__user_msg msg2">Witaj,
+                        <?php
+                        $current_user = wp_get_current_user();
+                        echo $current_user->display_name;
+                        ?>!
+                    </p>
+                </div>
+
+
+
+            <?php else : ?>
+
+
+                <div class="nav__top__user">
+                    <div class="nav__top__user_bottom" style="width:200px; left:-110px;">
+                        <p class="nav__top__user_msg msg1">Nie jesteś zalogowany</p>
+                        <a class="btn btn-nav-login" href="<?php bloginfo('url'); ?>/moje-konto">Login / Rejestracja</a>
+                    </div>
+                    <p class="nav__top__user_msg msg2">Zaloguj się</p>
+                </div>
+
+
+            <?php endif; ?>
+			
         </div>
     </nav>
     <header class="masthead" style="background:url('<?php bloginfo('template_directory'); ?>/img/hero20.jpg') center">

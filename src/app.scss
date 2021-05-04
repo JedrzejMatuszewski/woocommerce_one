@@ -19,11 +19,11 @@ body {
     color: #000;
 }
 
-//body,
-//html {
-//   width: 100%;
-//   height: 100%;
-//}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
 
 h1,
 h2,
@@ -48,20 +48,7 @@ p {
 }
 
 .main-container {
-    min-height: 70vh;
-    //80
-}
-
-section#offer {
-    .container {
-        .col-lg-8 {
-            ul {
-                li {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
+    min-height: 80vh;
 }
 
 @media (min-width:768px) {
@@ -70,19 +57,6 @@ section#offer {
         line-height: 1.6;
         //margin: 0 0 35px;
     }
-
-    section#offer {
-        .container {
-            .col-lg-8 {
-                ul {
-                    li {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-    }
-
 }
 
 
@@ -251,7 +225,7 @@ a.bt-home-a {
 @media (min-width:768px) {
 
     .masthead {
-        height: 100vh;
+        height: 100%;
         padding: 0;
 
 
@@ -302,7 +276,7 @@ a.bt-home-a {
     }
 
     .masthead {
-        height: 100vh;
+        height: 100%;
         padding: 0;
 
 
@@ -394,21 +368,22 @@ section.p404 {
 
 
     .cat-item {
-        display: flex;
-        flex-direction: column;
+        font-size: 1.1rem;
+        background-color: $r_blue_light;
+        padding: .3rem;
+        margin-bottom: 3px;
+        border-radius: 3px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $r_blue;
+        }
 
         a {
             color: #fff;
-            font-size: 1.1rem;
-            background-color: $r_blue_light;
-            padding: .3rem;
-            margin-bottom: 3px;
-            border-radius: 3px;
-            text-align: center;
-            transition: all 0.3s ease-in-out;
 
             &:hover {
-                background-color: $r_blue;
                 color: #fff;
             }
 
@@ -416,32 +391,11 @@ section.p404 {
     }
 
     .current-cat {
-        a {
-            background-color: $r_blue;
-        }
-    }
-
-}
-
-#all_products {
-    display: flex;
-    flex-direction: column;
-
-    a {
         background-color: $r_blue;
-        color: #fff;
-        font-size: 1.1rem;
-        padding: .3rem;
-        border-radius: 3px;
-        text-align: center;
-
-        &:hover {
-            background-color: $r_blue_darker;
-            color: #fff;
-        }
     }
 
 }
+
 
 //woocommerce
 
@@ -521,9 +475,7 @@ ul.products li.product .woocommerce-loop-product__title {
     width: auto;
 }
 
-.button {
-    transition: linear 0.3s;
-}
+
 
 //koszyk buttony
 .woocommerce #respond input#submit,
@@ -659,6 +611,7 @@ input#woocommerce-product-search-field-0 {
 
 //widget ost przyciski   wKOSZYK
 a.button.wc-forward {
+    width: 100%;
     padding: 10px 5px;
     font-size: 1rem;
     text-align: center;
@@ -714,29 +667,24 @@ ul.products li.product .star-rating {
 
 .woocommerce div.product form.cart .button {
     vertical-align: middle;
+    float: left;
     height: 50px;
+    margin-left: 10px;
     width: 100%;
 }
 
 .woocommerce div.product form.cart {
     margin-bottom: 2em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .woocommerce .quantity .qty {
-    padding: 0;
-    margin: 0;
+    padding: 0.35em;
     height: 50px;
     border: none;
+    width: 80px;
     background-color: #19458d0d;
-}
-
-.woocommerce div.product form.cart div.quantity {
-    float: none;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
 }
 
 .woocommerce div.product .product_title {
@@ -825,9 +773,9 @@ ul.products li.product .star-rating {
         z-index: 999;
         display: none;
         position: absolute;
-        width: 150px;
+        width: 200px;
         top: 100%;
-        left: 0;
+        left: -73px;
         background-color: #fff;
         border-radius: 0.2rem;
         padding: 5px;
@@ -880,151 +828,4 @@ button.woocommerce-Button.woocommerce-button.button.woocommerce-form-register__s
 .woocommerce form .form-row {
     padding: 3px;
     margin: 0 0 6px;
-}
-
-//Strona produktu
-.slick-list.draggable {
-    max-height: 440px;
-}
-
-.product_meta {
-    display: flex;
-    flex-direction: column;
-}
-
-a.added_to_cart.wc-forward {
-    display: none;
-}
-
-//Warianty produktu-------------------------------
-
-.woocommerce div.product form.cart .variations select {
-    width: 100%;
-    height: 50px;
-    border: none;
-    background-color: #19458d0d;
-    text-align: center;
-}
-
-.single_variation_wrap {
-    width: 100%;
-    position: relative;
-    margin-top: 4px;
-}
-
-form.variations_form.cart {
-    margin-top: 50px;
-}
-
-.woocommerce-variation.single_variation {
-    top: 16px;
-    left: 200px;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-}
-
-.variations {
-    tbody {
-        tr {
-            td.label {
-                padding-top: 14px;
-            }
-        }
-    }
-}
-
-
-
-// end warianty ---------------------------
-
-.masthead .intro-body .brand-heading {
-    font-family: "Kaushan Script", cursive;
-    font-weight: 300;
-}
-
-.woocommerce ul.products li.product .woocommerce-loop-product__title {
-    min-height: 55px;
-}
-
-//.woocommerce ul.products li.product .star-rating {
-//    font-size: .857em;
-//    position: absolute;
-//    top: 275px;
-//    left: 54px;
-//}
-
-//DO MERGE
-
-.woocommerce ul.products li.product .woocommerce-loop-product__title {
-    min-height: 38px;
-    padding: 0;
-}
-
-.woocommerce ul.products li.product .price {
-    margin-bottom: 0;
-}
-
-.woocommerce ul.products li.product .button {
-    margin-top: 0;
-}
-
-
-.woocommerce ul.products li.product {
-    text-align: center;
-    display: flex;
-    min-height: 330px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-//END MERGE --------------------------------------------
-
-
-//Arrow-left
-.arrow {
-    display: block;
-    background-color: $r_blue;
-    width: 200px;
-    padding: 5px;
-    position: relative;
-    top: -17px;
-    color: #fff;
-    text-align: right;
-    font-weight: bold;
-    border-radius: 3px;
-    padding-right: 10px;
-    transition: linear 0.3s;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0px;
-        height: 0px;
-        border-top: 17px solid #fff;
-        border-bottom: 17px solid #fff;
-        border-right: 34px solid transparent;
-    }
-
-    &:hover {
-        background-color: $r_blue_darker;
-        color: #fff;
-    }
-
-}
-
-
-//warianty cd
-
-.woocommerce div.product form.cart div.quantity::before {
-    content: "Wprowadź ilość:";
-    font-weight: bold;
-    width: 130px;
-    padding-top: 15px;
-}
-
-td.label {
-    width: 80px;
 }

@@ -1,4 +1,8 @@
-<?php get_header('page'); ?>
+<?php 
+/*
+Template Name: Archives
+*/
+get_header('page'); ?>
 
 <div class="main-container container">
     <div class="row">

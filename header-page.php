@@ -22,8 +22,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/img/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
     <?php wp_head(); ?>
+	
+	
 </head>
 
 <body id="page-top" <?php body_class(); ?>>

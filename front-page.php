@@ -3,22 +3,27 @@
 <section id="about" class="content-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="text-center">O Nas</h2>
-                <p>Ponad 20-sto letnie doświadczenie w prowadzeniu działalności gospodarczej pozwoliło nam sięgnąć jeszcze wyżej
-                    i wspomóc naszą służbę zdrowia oraz zadbać o naszą planetę poprzez produkcję w pełni poddających się recyklingowi artykułów
-                    jednorazowego użytku. Stawiamy na rodzimych dostawców, którzy gwarantują najwyższą jakość materiału.
-                    Jesteśmy małą firmą, ale z dużymi ambicjami.</p>
-
-                <p>
-                    Głównym sposobem łączenia elementów jest spawanie ultradźwiękowe.
-                    Wykazuje ono bardzo wytrzymały sposób łączenia. Jego kolejną, ważną zaletą
-                    jest estetycznie i dobrze prezentujący się spaw. Natomiast elementy niemożliwe
-                    poddaniu zgrzewania są zszywane. Ponieważ robimy co możemy, aby sprostać
-                    zapotrzebowaniu w obecnym czasie na nasze produkty to każda maszyna pracuje
-                    tzn. szyjemy w całości oraz spawamy.
-                </p>
-
+            <div class="col-lg-12 mx-auto">
+                <h2 class="text-center">Polecane produkty</h2>
+                <p class="about-us-p mt-2 text-center">
+					Wybierz wysokiej jakości jednorazową odzież ochronną i dołącz do grona zadowolonych klientów.
+				</p>
+				
+				<div class="home-products d-flex flex-column">
+					<div class="home-product-slider mt-5">
+					<?php echo do_shortcode("[featured_products_slider slide_to_show='4' dots='false' arrows='true' outofstock='true' limit=4]"); ?>
+					</div>
+					
+					<div class="d-flex flex-row justify-content-center mt-1">
+						<a href="/sklep" class="btn rinome-button btn-bigger">Zobacz wszystkie produkty</a>
+					</div>
+					
+				
+					
+				</div>
+				
+				
+				
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -91,17 +96,30 @@
                 <p class="mb-5">RINOME spółka cywilna Katarzyna i Piotr Nowak<br>NIP: 7851808728</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-3 ml-auto text-center"><i class="fas fa-map-marked-alt fa-4x mb-3" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
                 <p>ul. Gogolewska 10<br>63-130 Zakrzewice</p>
             </div>
             <div class="col-lg-3 text-center"><i class="fa fa-phone fa-4x mb-3" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
-                <p> 505 663 107</p>
+				<p><a href="tel:505663107">505 663 107</a></p>
             </div>
             <div class="col-lg-3 mr-auto text-center"><i class="fa fa-envelope-o fa-4x mb-3" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
-                <p><a href="mailto:rinome.sc@gmail.com">rinome.sc@gmail.com</a></p>
+                <p><a href="mailto:kontakt@rinome.net">kontakt@rinome.net</a></p>
             </div>
         </div>
+		
+		
+			<div class="col-lg-9 mx-auto text-center mt-5">
+				<h2 class="section-heading mt-5">Formularz kontaktowy</h2>
+				<p>
+					Pozostańmy w kontakcie!
+				</p>
+				
+				<?php echo do_shortcode("[contact-form-7 id='476' title='Formularz 1']"); ?>
+			</div>
+
+		
+		
 </section>
 <div class="map-clean"><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAbODsGcyVYRKrqDsxn7Lt4wM6q-OF-ToE&amp;q=RINOME+sp%C3%B3%C5%82ka+cywilna+Katarzyna+i+Piotr+Nowak%2C+Gogolewska+10%2C+63-130+Zakrzewice&amp;zoom=13" width="100%" height="450"></iframe></div>
 
